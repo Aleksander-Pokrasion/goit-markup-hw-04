@@ -135,7 +135,8 @@ img {
   display: flex;
 }
 
-.nav-head:not(:last-child) {
+.nav-head:not(:last-child),
+.mailcontact-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -156,13 +157,9 @@ img {
   margin-left: auto;
 }
 
-.mailcontact-item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .mailcontact-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 
   color: var(--second-text-color);
   font-weight: 500;
@@ -175,13 +172,30 @@ img {
 .mailcontact-link:focus {
   color: var(--accent-color);
 }
+
+.mailcontact-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
 /* finish nav */
 
 /* hero */
-.baner {
+
+.baner-hero {
+  max-height: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--secondary-bg-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero-studio/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   text-align: center;
 }
@@ -220,6 +234,7 @@ img {
 .baner-button:hover,
 .baner-button:focus {
   background-color: var(--button-hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* hero finish */
 
@@ -240,6 +255,13 @@ img {
 
 .skills-number:not(:last-child) {
   margin-right: 30px;
+}
+
+.push-icon {
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  border-radius: 4px;
+  background-color: var(--team-bg-color);
 }
 
 .skills-name {
@@ -291,6 +313,9 @@ img {
 
 .team-number {
   flex-basis: calc((100% - 30px) / 4);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-number:not(:last-child) {
@@ -299,6 +324,7 @@ img {
 
 .team-number-container {
   padding: 30px 10px;
+  border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
 
@@ -312,6 +338,8 @@ img {
 }
 
 .team-about {
+  margin-bottom: 16px;
+
   color: var(--second-text-color);
   font-size: 16px;
   line-height: 1.18;
