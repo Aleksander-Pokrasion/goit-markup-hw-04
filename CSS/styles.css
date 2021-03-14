@@ -533,17 +533,25 @@ img {
   line-height: 1.62;
   letter-spacing: var(--main-letter-spacing);
   text-align: center;
+
+  cursor: pointer;
 }
 
 .project-button.current {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-button:hover,
 .project-button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .card-list {
@@ -566,8 +574,15 @@ img {
 }
 
 .project-link {
+  display: block;
   text-decoration: none;
   color: var(--primary-text-color);
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-title {
